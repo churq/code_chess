@@ -99,12 +99,5 @@ def main():
 
 if __name__ =='__main__':
     main()
-    #run('a4','d4')
-    # mk = knight()
-    # startp = (1,1)
-    # result = [startp]
-    # endp = (8,1)
-    # results = []
-    #all_knight_path(mk,startp,endp,result,results)
     print ('*'*10)
     print ('Finished')
