@@ -47,3 +47,10 @@ a1, d4 => [a1-b3-a5-c6-d4, a1-b3-c1-e2-d4, a1-b3-c5-e6-d4, a1-b3-d2-f3-d4, a1-b3
   - Simple neat solutions, with clear naming and tests are prefered.
   - Don’t worry about performance.
   - If you’re unsure of anything or are feeling stuck, please ask.
+
+ - complete the task and meet the basic criterior
+ -command : python main.py --start [start_position] --end [end_position]
+ * start_position format :[a-z][0-9]
+ * end_position format :[a-z][0-9]
+ - further tests will be implemented
+ - unit test scripts will be uploaded during the weekend
