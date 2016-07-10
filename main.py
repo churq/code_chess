@@ -1,5 +1,6 @@
 import argparse
 import re
+from operator import itemgetter
 
 class knight():
     def __init__(self):
@@ -73,9 +74,14 @@ def run(sp,ep):
         results = []
         all_knight_path(k, sp, ep, result, results)
         if results:
+            ordered_result = []
             for r in results:
                 temp = [chr(i[0] + 96) + str(i[1]) for i in r]
-                print('-'.join(temp))
+                ordered_result.append(('-'.join(temp),''.join([i[0] for i in temp]),''.join([i[1] for i in temp])))
+            ordered_result = sorted(ordered_result,key = itemgetter(1,2))
+            for i in ordered_result:
+                print (i[0])
+
         else:
             print ([])
     else:
