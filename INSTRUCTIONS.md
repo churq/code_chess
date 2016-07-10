@@ -22,7 +22,7 @@ ending position on the command line, responds with:
 - Each square the knight travels should be listed with dashes between.
 - There should be no looping paths with the same square repeated again in the same series of moves.
 - The paths should be sorted alphabetically.
-- Ignore any paths which are longer than 4 squares, including the start and end square.
+- Ignore any paths with more than 4 moves.
 
 ## Examples
 
