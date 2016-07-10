@@ -48,9 +48,21 @@ a1, d4 => [a1-b3-a5-c6-d4, a1-b3-c1-e2-d4, a1-b3-c5-e6-d4, a1-b3-d2-f3-d4, a1-b3
   - Don’t worry about performance.
   - If you’re unsure of anything or are feeling stuck, please ask.
 
- - complete the task and meet the basic criterior
+ - complete the task and meet the requirement
  -command : python main.py --start [start_position] --end [end_position]
  * start_position format :[a-z][0-9]
  * end_position format :[a-z][0-9]
- - further tests will be implemented
- - unit test scripts will be uploaded during the weekend
+ -sample output:
+ C:\Users\Ranqing\PycharmProjects\chess\test-rachel>python main.py --start h1 --end e4
+h1-f2-d1-c3-e4
+h1-f2-d3-c5-e4
+h1-f2-e4
+h1-f2-g4-f6-e4
+h1-f2-h3-g5-e4
+h1-g3-e4
+h1-g3-e2-c3-e4
+h1-g3-f1-d2-e4
+h1-g3-f5-d6-e4
+h1-g3-h5-f6-e4
+**********
+Finished
