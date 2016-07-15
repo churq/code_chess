@@ -1,4 +1,6 @@
 For windows:
+============
+
 1. set system variable PYTHONPATH=C:\Users\xxxxx\PycharmProjects\chess\code_chess
 2. run in cmd prompt
    python .\code_chess\chess\main.py --start [start_position] --end [end_position]
