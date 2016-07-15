@@ -1,5 +1,5 @@
 import unittest
-from chess.myLib import *
+from chess.core import *
 
 class Test_Knight(unittest.TestCase):
     def setUp(self):

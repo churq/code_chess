@@ -1,5 +1,5 @@
 import argparse
-from chess.myLib import *
+from chess.core import *
 
 
 def main():
