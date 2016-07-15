@@ -1,0 +1,2 @@
+import test.test_knight_class
+import test.chess_move_path_tests

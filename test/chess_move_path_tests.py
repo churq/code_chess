@@ -91,6 +91,3 @@ class Test_ChessPiece(unittest.TestCase):
     #
     # def test_case9(self):
     #     self.assertEqual(analysis((1, 1), (4, 9)), False)
-
-if __name__=='__main__':
-    unittest.main()

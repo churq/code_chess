@@ -112,7 +112,7 @@ class ChessPiece():
         except:
             return None
 
-class Knight():
+class Knight(ChessPiece):
     def __init__(self):
         # all 8 possible positions
         self.rules = {
