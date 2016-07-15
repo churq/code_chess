@@ -1,9 +1,9 @@
 import argparse
-from myLib import *
+from chess.myLib import *
 
 
 def main():
-    parser = argparse.ArgumentParser(description='predict knight path')
+    parser = argparse.ArgumentParser(description='predict knight move path')
     parser.add_argument('--start',type = str, required = True, help='start position of knight, make sure first letter second numeric')
     parser.add_argument('--end', type =str, required = True, help = 'end position of knight, make sure first letter second numeric')
 
