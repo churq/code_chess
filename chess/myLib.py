@@ -115,6 +115,7 @@ class ChessPiece():
 class Knight(ChessPiece):
     def __init__(self):
         # all 8 possible positions
+        super(Knight,self).__init__()
         self.rules = {
             'm1':(2,1),
             'm2':(1,2),
