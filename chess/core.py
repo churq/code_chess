@@ -13,18 +13,18 @@ class ChessPiece():
         self.rules = {}
 
     def _isvalid(self, x, y):
-        inRange = lambda x : 1 <= x <= self.boardrange
+        inRange = lambda x: 1 <= x <= self.boardrange
         return inRange(x) and inRange(y)
 
-    def _num_to_letter (self, num):
+    def _num_to_letter(self, num):
         return chr(num + 96)
 
     def _letter_to_num(self, letter):
-        return ord(letter)-96
-    
-    def jump(self,start_position,end_position):
+        return ord(letter) - 96
+
+    def jump(self, start_position, end_position):
         if self.rules:
-            if self._analysis(start_position,end_position):
+            if self._analysis(start_position, end_position):
                 result = [start_position]
                 results = []
                 self._paths_start_to_end(start_position, end_position, result, results)
@@ -43,14 +43,12 @@ class ChessPiece():
 
                 return results
             else:
-                print ("input argument is invalid, please follow the format: [a-f][0-9]")
+                print("input argument is invalid, please follow the format: [a-f][0-9]")
                 return None
 
         else:
-            print ("no rule is defined")
+            print("no rule is defined")
             return None
-
-
 
     def next_move(self, current_position):
         try:
@@ -70,7 +68,7 @@ class ChessPiece():
         else:
             return None
 
-    def _analysis(self,start_position, end_position):
+    def _analysis(self, start_position, end_position):
         """
         check if start and end position are in the range of board
         return: True or False
@@ -82,7 +80,7 @@ class ChessPiece():
             start_position = (ord(start_position[0]) - 96, int(start_position[1]))
             end_position = (ord(end_position[0]) - 96, int(end_position[1]))
 
-            return self._isvalid(start_position,end_position)
+            return self._isvalid(start_position, end_position)
         else:
             return False
 
@@ -112,27 +110,18 @@ class ChessPiece():
         except:
             return None
 
+
 class Knight(ChessPiece):
     def __init__(self):
         # all 8 possible positions
-        super(Knight,self).__init__()
+        super(Knight, self).__init__()
         self.rules = {
-            'm1':(2,1),
-            'm2':(1,2),
-            'm3':(-1,2),
-            'm4':(-2,1),
-            'm5':(-2,-1),
-            'm6':(-1,-2),
-            'm7':(1,-2),
-            'm8':(2,-1)
+            'm1': (2, 1),
+            'm2': (1, 2),
+            'm3': (-1, 2),
+            'm4': (-2, 1),
+            'm5': (-2, -1),
+            'm6': (-1, -2),
+            'm7': (1, -2),
+            'm8': (2, -1)
         }
-
-
-
-
-
-
-
-
-
-
